@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Stack header and section vertically */
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+*{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+/* Events */
+.events{
+    width: 80%;
+    margin: 60px auto;
+}
+
+p {
+    color: #7c7c7c;
+    margin: 5px;
+    padding: 0px 40px;
+    font-size: 2vmin;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgba(73, 73, 126, 100);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row .col img {
+    width: 80%;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size:3vmin ;
+    color: black;
+    margin: 20px auto;
+}
+/* Explore */
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/Klee.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 50px;
+}
+.explore-content{
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 6vmin;
+    margin: 50px;
+}
+.explore-content .line {
+    margin-bottom: 50px;
+}
+.explore-content p {
+    color: rgb(214, 213, 213);
+}
+
+
+
+/* Header IMG */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image:url('img/Klee.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 100%;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.header-content h1{
+    font-size: 5vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: red;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Profile Sliders */
+
+.slide-content{
+    max-width: 1120px;
+    background-color: grey; 
+    padding: 40px 0;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey; 
+    padding: 40px 0;
+}
+.slide-content{
+    overflow: hidden;
+    margin: 0 40px;
+    border-radius: 25px;
+}
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.image-content, 
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+.card-image{ 
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after {
+    content: '';
+    position:absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #ffffff;
+}
+.swiper-navBtn {
+    color: black;
+}
+/* Profile Options */
+
+.glass-card {
+    margin-top: 80px;
+    width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    height: 400px;
+    margin: 60px auto;
+    
+}
+.glass-card h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.glass-card p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.glass-card button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00f2fe;
+    background-image: linear-gradient(45deg, #4facfe,#00f2fe);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+}
+.glass-card button:hover {
+    opacity: 0.85;
+}
+@media (max-width: 480px) {
+    .glass-card {
+        padding: 15px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .glass-card h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .glass-card button {
+        height: 50px;
+        font-size: 16px;
+        width: 200px;
+    }
+    .events{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 768px) {
+    .events .row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .events .col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .events .col img {
+        width: 90%;
+    }
+    .events{
+        width: 80%;
+        margin: 30px auto;
+    }
+    .explore {
+        height: auto;
+        padding: 40px 20px;
+        background-position: center;
+    }
+
+    .explore-content {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .explore-content h1 {
+        font-size: 5vmin;
+        margin: 20px 0;
+    }
+
+    .explore-content p {
+        font-size: 14px;
+    }
+    .glass-card {
+        padding: 15px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .glass-card h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .glass-card button {
+        height: 50px;
+        font-size: 16px;
+        width: 200px;
+    }
+    
+}
